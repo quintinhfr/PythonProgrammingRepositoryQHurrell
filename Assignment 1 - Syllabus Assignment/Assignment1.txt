@@ -1,0 +1,27 @@
+Quintin Hurrell
+CISC 120 - 01
+Assignment 1 -- Syllabus Assignment
+1/11/22
+
+1. What is the late submission policy of this course?
+
+- No credit will be given for late assignments. Even though you do not receive credit, all late assignments must still be turned in. If you have outstanding assignments at the end of the semester, a late penalty of 5% will be applied to our grade, per assignment.
+
+2. What is the key to gaining confidence in programming?
+
+- Writing programs / practicing / Learning from mistakes
+
+3. What is the prerequisite knowledge of this course? Do you feel comfortable with your familiarity with this information?
+
+- Math 120 / Yes, I feel comfortable with my knowledge from this class.
+
+4. What are you most looking forward to about this course?
+
+- I am looking forward to just learning how to program. I am sure this sounds obvious, but it is something that has amazed me since I was young. I have heard that this course is a challenge, but I am excited to work hard and learn how to program.
+
+5. What are your biggest concerns about this course?
+
+- My biggest concern with this course is that I have no prior knowledge about programming. I am going into this course unaware of what I'm about to get into. But, this is also an exiting thing for me as well.
+
+
+NOTE: This was the first time I have ever made a .txt file, or used plain text. Hopefully I did it right. 

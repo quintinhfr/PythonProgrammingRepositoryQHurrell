@@ -1,0 +1,11 @@
+
+    
+#----------
+# Lab 5
+#----------
+
+(a) - Yes, the new zoomed in picture looks very grainy. This is because you are scaling up the original image by a certain factor, which means that the picture is compensating pixel quality for it's size. The original size of the picture is the most detailed that that picture can be on a monitor. This is because each pixel is used in it's apporpriate manner, when scaled, multiple pixels can be used to simulate one pixel on the original.
+
+(b) - Well, the image that we used (the sorceress) is a fairly small base image. If you had say, a high resolution image that already took all of your monitor, that's way more pixels that need to be scaled up. More scaling means more time in the loop, and also just a larger picture as an end product. I would imagine that there would be ways to do this more efficiently. I think that for one, my program rescales the window 2 times, if you were to work witht he default setting the entire time, that could change a lot. Also, trying to consolidate loops, possibly doing two tasks in the same loop. Anything to make the program perform less looping a whole.
+
+(c) - For this you can use similar coordinates to the first example. These being X = .65 and Y = .70

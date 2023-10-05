@@ -1,0 +1,34 @@
+1.2.1 - 
+
+This sequence of statements ends up making all of the variables end up being tied to the integer that "a" was originally connected to. I tested this in my terminal where a = 50 and b = 70, the results are below:
+
+>>> a = 50
+>>> b = 70
+>>> t = a
+>>> b = t
+>>> a = b
+>>> t
+50
+>>> b
+50
+>>> a
+50
+
+
+1.2.9 - 
+
+I recieved a "NameError" message that claimes that "sqrt" is not defined. This is because with adding "math", python cannot find the module that you are looking for. The error message I recieved is below:
+
+quintinhurrell@Quintins-MacBook-Pro assignment4 % python3 quadratic.py -3.0 2.0
+Traceback (most recent call last):
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment4/quadratic.py", line 9, in <module>
+    d = sqrt(discriminant)
+NameError: name 'sqrt' is not defined
+
+
+1.2.14 -
+
+I believe that the issue with this code is that python automatically does the order of operations wrong for. I think that the main reason that this occurs is because the coder uses (radius * radius) to show the radius being to a power to two, but this needs done first. The correct code is below:
+
+force = (((G * mass1) * mass2) / (radius * radius))
+

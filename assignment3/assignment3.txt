@@ -1,0 +1,121 @@
+1.1.2 - 
+
+a - I recieve a name error message as show below:
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+Traceback (most recent call last):
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 1, in <module>
+    stdio
+NameError: name 'stdio' is not defined
+
+b. This time I recieved a syntax error as shown below:
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 1
+    import
+          ^
+SyntaxError: invalid syntax
+
+c. In this last test I got another Name Error as shown below:
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+Traceback (most recent call last):
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 1, in <module>
+    stdio.writeln('hello, world!')
+NameError: name 'stdio' is not defined
+
+- It is important to note that none of these test resulted in a working output
+
+
+1.1.3 - 
+
+a. In this trial I recieved a syntax error:
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 1
+    iport stdio
+          ^^^^^
+SyntaxError: invalid syntax
+
+b. This trial was actually different, the program tried to execute by realized that the module was non-existent (because it was spelled wrong):
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+Traceback (most recent call last):
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 1, in <module>
+    import sdio
+ModuleNotFoundError: No module named 'sdio'
+
+c. This time the program actually understood what I was trying to do, it even asked me if I meant to type "writeln":
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+Traceback (most recent call last):
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 2, in <module>
+    stdio.witeln('hello, world!')
+AttributeError: module 'stdio' has no attribute 'witeln'. Did you mean: 'writeln'?
+
+d. This trial was very similar to the last, the only difference is that the program thought I meant to type "write" isntead of "writeln":
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+Traceback (most recent call last):
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 2, in <module>
+    stdio.witel('hello, world!')
+AttributeError: module 'stdio' has no attribute 'witel'. Did you mean: 'write'?
+
+
+1.1.4 - 
+
+a. I got an "unterminated string literal" error message:
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 2
+    stdio.writeln(hello, world!')
+                               ^
+SyntaxError: unterminated string literal (detected at line 2)
+
+b. I got a very similar response to "a";
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+  File "/Users/quintinhurrell/Desktop/CISC120/assignment2/greetings.py", line 2
+    stdio.writeln('hello, world!)
+                  ^
+SyntaxError: unterminated string literal (detected at line 2)
+
+c. I attempted this twice and nothing happened, the command line just reappeared over and over again:
+
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+quintinhurrell@Quintins-MacBook-Pro assignment2 % python3 greetings.py
+quintinhurrell@Quintins-MacBook-Pro assignment2 % 
+
+
+1.1.5 - 
+
+a. This simply treated "python" as a person's name:
+
+quintinhurrell@Quintins-MacBook-Pro assignment3 % python3 useargument.py python
+Hi, python. How are you?
+
+b. The terminal thought that by me typing "&", I was trying to create/find an event:
+
+quintinhurrell@Quintins-MacBook-Pro assignment3 % python3 useargument.py @!&^%
+zsh: event not found: &
+
+c. This time the program acted like example "a". The pogram treated "1234" as a name:
+
+quintinhurrell@Quintins-MacBook-Pro assignment3 % python3 useargument.py 1234
+Hi, 1234. How are you?
+
+d. The program could not run the file because the ".py" was missing:
+
+quintinhurrell@Quintins-MacBook-Pro assignment3 % python3 useargument Bob
+/Library/Frameworks/Python.framework/Versions/3.10/bin/python3: can't open file '/Users/quintinhurrell/Desktop/CISC120/assignment3/useargument': [Errno 2] No such file or directory
+
+e. In this example you do not tell the terminal to use python to open the file, so it cannot find a command:
+
+quintinhurrell@Quintins-MacBook-Pro assignment3 % useargument.py Bob
+zsh: command not found: useargument.py
+
+f. The program only detected the first argument listed:
+
+quintinhurrell@Quintins-MacBook-Pro assignment3 % python3 useargument.py Alice Bob
+Hi, Alice. How are you?
+
